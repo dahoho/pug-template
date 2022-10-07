@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "websiteName": "サイト名",
+    "websiteDomain": "",
+    "themeColor": "#ffffff"
+  },
+  "pages": {
+    "index": {
+      "id": "index",
+      "category": "index",
+      "root": "pages",
+      "title": "ページタイトル",
+      "description": "",
+      "directory": "index.html",
+      "path": "",
+      "ogpImg": "ogp.jpg"
+    },
+    "contact": {
+      "id": "contact-index",
+      "category": "contact",
+      "root": "pages",
+      "title": "ページタイトル",
+      "description": "",
+      "directory": "contact/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    },
+    "styleguide": {
+      "id": "styleguide",
+      "category": "styleguide",
+      "root": "pages",
+      "title": "ページタイトル",
+      "description": "",
+      "directory": "styleguide/",
+      "path": "../",
+      "ogpImg": "ogp.jpg"
+    }
+  }
+}

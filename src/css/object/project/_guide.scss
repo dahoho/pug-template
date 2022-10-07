@@ -1,0 +1,42 @@
+.p-guide-main {
+  max-width: 1360px;
+  padding: 100px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  @include l-mobile {
+    padding: 60px 20px;
+  }
+}
+
+.p-guide-block {
+  & + .p-guide-block {
+    margin-top: 80px;
+    @include l-mobile {
+      margin-top: 40px;
+    }
+  }
+}
+
+.p-guide-code {
+  padding: 15px;
+  margin-top: 20px;
+  overflow-x: hidden;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  @include l-mobile {
+    padding: 10px;
+  }
+}
+
+.p-guide-title {
+  padding-left: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #f49600;
+  border-left: 6px solid #1c439a;
+  @include l-mobile {
+    font-size: 1.8rem;
+  }
+}

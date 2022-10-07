@@ -1,0 +1,174 @@
+.p-contact-body {
+  margin-top: 60px;
+  @include l-mobile {
+    margin-top: sp(40);
+  }
+}
+
+.p-contact-group {
+  @include flex($jc: flex-start, $ai: center, $w: nowrap, $d: row);
+  @include l-mobile {
+    display: block;
+  }
+  &:not(:first-of-type) {
+    margin-top: 60px;
+    @include l-mobile {
+      margin-top: 40px;
+    }
+  }
+  &__header {
+    flex-shrink: 0;
+    width: 320px;
+    @include fs-all(14, 18);
+    font-weight: fw(bold);
+    @include flex($jc: flex-start, $ai: center, $w: nowrap, $d: row);
+    @include l-mobile {
+      width: 100%;
+    }
+  }
+  &__content {
+    width: 100%;
+    @include l-mobile {
+      margin-top: sp(16);
+    }
+  }
+}
+
+.p-contact-required {
+  width: 48px;
+  height: 24px;
+  margin-left: 16px;
+  font-weight: fw(bold);
+  color: c(white-nl);
+  background-color: red;
+  @include fs-all(10, 12);
+  @include flex($jc: center, $ai: center, $w: nowrap, $d: row);
+  @include l-mobile {
+    width: sp(44);
+    height: sp(22);
+    margin-left: sp(12);
+  }
+}
+
+.p-contact-input {
+  &__text {
+    & input {
+      @include fs-all(16, 16);
+      width: 100%;
+      padding: 24px 32px;
+      background-color: c(white-nl);
+      border: 3px solid c(default);
+      @include l-mobile {
+        padding: sh-sp(20, 24);
+      }
+      &::placeholder {
+        color: #aaaaaa;
+      }
+    }
+  }
+}
+
+.p-contact-select {
+  position: relative;
+  width: 360px;
+  color: c(default);
+  @include l-mobile {
+    width: 100%;
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    display: block;
+    width: 18px;
+    height: 15px;
+    content: '';
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
+    background-color: c(default);
+    @include l-mobile {
+      right: sp(24);
+      width: sp(8);
+      height: sp(13);
+    }
+  }
+  &__body {
+    @include fs-all(16, 16);
+    width: 100%;
+    padding: 24px 32px;
+    color: c(default);
+    background-color: c(white-nl);
+    border: 3px solid c(default);
+    appearance: none;
+    @include l-mobile {
+      padding: sh-sp(20, 24);
+    }
+  }
+}
+
+.p-contact-textarea {
+  &__body {
+    @include fs-all(16, 16);
+    display: block;
+    width: 100%;
+    height: 240px;
+    padding: 24px 32px;
+    resize: none;
+    background-color: c(white-nl);
+    border: 3px solid c(default);
+    @include l-mobile {
+      height: sp(200);
+      padding: sh-sp(20, 24);
+    }
+    &::placeholder {
+      color: #aaaaaa;
+    }
+  }
+}
+
+.p-contact-privacy {
+  margin-top: 80px;
+  font-weight: fw(bold);
+  line-height: 2.4;
+  text-align: center;
+  @include fs-all(14, 18);
+  @include l-mobile {
+    margin-top: sp(60);
+  }
+  &__link {
+    text-decoration: underline;
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.p-contact-submit {
+  text-align: center;
+  margin-top: 80px;
+  @include l-mobile {
+    width: 100%;
+    margin-top: sp(40);
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 60px;
+    font-weight: fw(bold);
+    color: c(white-nl);
+    background-color: c(black-nl);
+    border: none;
+    @include fs-all(15, 20);
+    @include l-mobile {
+      width: sp(280);
+      height: sp(60);
+    }
+  }
+}
+/*! purgecss start ignore */
+
+/*! purgecss end ignore */
