@@ -16,7 +16,8 @@
     "fix:prettier": "prettier --write 'src/**/*.js'",
     "fix:eslint": "yarn eslint --fix",
     "validate": "w3c-html-validator build/**/ build/*.html",
-    "build:validate": "yarn build && yarn validate"
+    "build:validate": "yarn build && yarn validate",
+    "html:lint": "markuplint build/**/ build/*.html"
   },
   "engines": {
     "node": "14.18.1"
@@ -71,6 +72,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^6.0.0",
+    "markuplint": "^2.10.2",
     "merge-stream": "^2.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
