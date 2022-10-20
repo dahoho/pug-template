@@ -7,7 +7,7 @@ gulp.task(
   'default',
   gulp.series(
     'cleanDest',
-    gulp.parallel('pug', 'sass', 'scripts', 'vendorScripts', 'copyToDest', 'imageminWebpDest'), // webp対応する場合
+    // gulp.parallel('pug', 'sass', 'scripts', 'vendorScripts', 'copyToDest', 'imageminWebpDest'), // webp対応する場合
     gulp.parallel('pug', 'sass', 'scripts', 'vendorScripts', 'copyToDest'),
     gulp.parallel('serve', 'watch'),
   ),
@@ -20,7 +20,7 @@ gulp.task(
     gulp.parallel('pug', 'sass', 'copyToDest'),
     'cleanBuild',
     gulp.parallel('replaceHtml', 'scripts'),
-    gulp.parallel('cleanCss', 'copyToBuild', 'copyImgToBuild', 'imagemin', 'imageminWebpBuild', 'copyJsToBuild', 'copyPhpToBuild'), // webp対応する場合
+    // gulp.parallel('cleanCss', 'copyToBuild', 'copyImgToBuild', 'imagemin', 'imageminWebpBuild', 'copyJsToBuild', 'copyPhpToBuild'), // webp対応する場合
     gulp.parallel('cleanCss', 'copyToBuild', 'copyImgToBuild', 'imagemin', 'copyJsToBuild', 'copyPhpToBuild'),
   ),
 );
