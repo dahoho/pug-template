@@ -14,8 +14,8 @@
   }
   @if ($sp) {
     @include l-mobile {
-      font-size: rem($sp);
-      // font-size: sp($sp); // vwを扱う場合
+      // font-size: rem($sp);
+      font-size: sp($sp); // vwを扱う場合
       // font-size: mn($sp); // 最大値のみを設定する場合
       // font-size: cp($value, $value * 2); // 最小値も設定する場合
     }
