@@ -96,12 +96,10 @@ option {
   margin: 0;
 }
 
-// IEのselect要素の右側に表示される矢印を無効にする
 select::-ms-expand {
   display: none;
 }
 
-// placeholder
 input::placeholder {
   color: rgba(c(default), 0.5);
 }
